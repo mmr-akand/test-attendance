@@ -1,0 +1,22 @@
+.card-header-nobg-bb {
+    .card-header {
+        background-color: transparent;
+    }
+}
+.card-default {
+	border: 0;
+	box-shadow: 0 5px 12px rgba($black, .1);
+}
+.card-has-table-default {
+	.card-body {
+
+	}
+}
+.card-padding-lg {
+	.card-header {
+		padding: 1rem 1.5rem;
+	}
+	.card-body {
+		padding: 1.5rem;
+	}
+}

@@ -1,0 +1,112 @@
+
+/* BUTTON */
+
+.btn {
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: #eee;
+    text-decoration: none;
+  }
+
+  &.btn-square {
+    @include border-radius(0);
+  }
+  &.btn-round {
+    @include border-radius(10em);
+  }
+
+}
+
+.btn-only-icon {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    &.btn-sm {
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
+    }
+}
+
+[class*="btn-custom-"] {
+  text-transform: uppercase;
+  font-size: .875rem;
+  font-weight: 500;
+  letter-spacing: .063rem;
+  &:hover, &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-primary {
+	@include base-button-variant(#fff, $primary, $primary);
+}
+.btn-success {
+	@include base-button-variant(#fff, $color-success, $color-success);
+}
+.btn-info {
+	@include base-button-variant(#fff, $color-info, $color-info);
+}
+.btn-warning {
+	@include base-button-variant(#fff, $color-warning, $color-warning);
+}
+.btn-danger {
+	@include base-button-variant(#fff, $color-danger, $color-danger);
+}
+.btn-custom-default {
+  @include base-button-variant($color-text, $white, $border-color);
+}
+.btn-custom-danger {
+  @include base-button-variant($white, $color-danger, $color-danger);
+}
+.btn-custom-outline-light {
+  @include base-button-outline-variant($color-text, $border-color, $border-color);
+  &:hover {
+    color: darken($color-text, 5%);
+  }
+}
+
+.btn-custom-outline-warning {
+  @include base-button-outline-variant($color-warning, $color-warning, $color-warning);
+}
+.btn-custom-outline-danger {
+  @include base-button-outline-variant($color-danger, $color-danger, $color-danger);
+}
+
+
+
+.btn-custom-primary {
+    @include base-button-variant($white, $primary, $primary);
+}
+
+
+
+.btn-custom-outline-primary {
+    @include base-button-outline-variant($primary, $primary, $primary);
+}
+.btn-custom-outline-secondary {
+  background-color: transparent;
+  border-color: $color-secondary;
+  color: $color-secondary;
+}
+
+.btn-facebook {
+  @include base-button-variant(#fff, $brand-facebook, $brand-facebook);
+}
+.btn-twitter {
+  @include base-button-variant(#fff, $brand-twitter, $brand-twitter);
+}
+.btn-linkedin {
+  @include base-button-variant(#fff, $brand-linkedin, $brand-linkedin);
+}
+

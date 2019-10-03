@@ -1,0 +1,19 @@
+.page-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: .75rem;
+    .heading-title {
+        font-size: 1.75rem;
+        margin-bottom: .5rem;
+    }
+}
+.heading-actions {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: .5rem;
+}
+.card-statistics {
+    min-height: 100%;
+    border: 0;
+}

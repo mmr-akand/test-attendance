@@ -1,0 +1,69 @@
+//2e3192
+$primary:                  		 #4a9437;
+$color-secondary:                #ffd300;
+$color-success:                  #5cb85c;
+$color-info:                     #5bc0de;
+$color-warning:                  #f0ad4e;
+$color-danger:                   #d9534f;
+
+$color-gray-base:                #37383c;
+$color-gray-light:               lighten($color-gray-base, 10%);
+$color-muted:                    lighten($color-gray-base, 55%);
+
+$color-heading:                  #021621;
+$color-text:                     #2c3b43;
+
+$color-linked:                   $primary;
+$color-linked-hover:             darken($color-linked, 15%);
+
+$border-color:                   lighten($color-gray-base, 68%);
+$input-border: 					 $border-color;
+
+$bg-gray:                        #F5F6FA;
+$bg-footer: $primary;
+
+$bg-body: $bg-gray;
+
+
+$white: #ffffff;
+$black: #000000;
+
+
+$brand-facebook:                 #3b5998;
+$brand-google:                   #dd4b39;
+$brand-twitter:                  #00aced;
+$brand-youtube:                  #bb0000;
+$brand-linkedin:                 #007bb5;
+$brand-instagram:                #125688;
+$brand-whatsapp:                 #4dc247;
+$brand-pinterest:                #cb2027;
+$brand-flickr:                   #ff0084;
+$brand-tumblr:                   #32506d;
+$brand-vk:                       #45668e;
+
+
+$ff-roboto: 				 	 'Roboto', sans-serif;;
+$ff-base: 						 $ff-roboto;
+$fs-base: 16px;
+$fw-base: normal;
+
+$fs-small: ($fs-base * .875);
+
+$common-space: 16px;
+$padding-section: ($common-space * 5);
+
+
+$navbar-height: 62px;
+
+
+$information-phone:              "only screen and (max-width : 320px)";
+$phone:                          '(max-width: 575px)';
+$extra-small-min:                '(min-width: 576px)';
+$extra-small-max:                '(max-width: 767px)';
+$small-min:                      '(min-width: 768px)';
+$small-max:                      '(max-width: 991px)';
+$small-only:                     '(min-width: 768px) and (max-width: 991px)';
+$medium-min:                     '(min-width: 992px)';
+$medium-max:                     '(max-width: 1199px)';
+$medium-only:                    '(min-width: 992px) and (max-width: 1199px)';
+$large-min:                      '(min-width: 1200px)';

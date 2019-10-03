@@ -1,0 +1,147 @@
+body {
+	padding-top: 61px;
+}
+.aside-navbar {
+	background: $white;
+	position: fixed;
+	left: 0;
+	top: 61px;
+	height: 100%;
+	z-index: 1040;
+	box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+}
+#main-content {
+	position: relative;
+	min-height: calc(100% - 61px);
+	background: $bg-body;
+}
+.content-container {
+	padding-top: 15px;
+	padding-bottom: 15px
+}
+
+.navbar-header, .aside-navbar, #main-content {
+	transition: all .25s linear;
+}
+
+/* .aside-menu_unfold {
+	.navbar-header {
+		width: 300px;
+	}
+	.aside-navbar {
+		width: 300px;
+	}
+	#main-content {
+		margin-left: 300px;	
+	}
+} */
+
+@media (min-width: 767px) {
+	.aside-menu_unfold {
+		.navbar-header {
+			width: 230px;
+		}
+		.aside-navbar {
+			width: 230px;
+		}
+		#main-content {
+			margin-left: 230px;	
+		}
+	}
+}
+
+/* @media (min-width: 992px) {
+	.aside-menu_unfold {
+		.navbar-header {
+			width: 260px;
+		}
+		.aside-navbar {
+			width: 260px;
+		}
+		#main-content {
+			margin-left: 260px;	
+		}
+	}
+} */
+
+@media (min-width: 1200px) {
+	.aside-menu_unfold {
+		.navbar-header {
+			width: 260px;
+		}
+		.aside-navbar {
+			width: 260px;
+		}
+		#main-content {
+			margin-left: 260px;	
+		}
+	}
+}
+
+
+@media (min-width: 1400px) {
+	.aside-menu_unfold {
+		.navbar-header {
+			width: 300px;
+		}
+		.aside-navbar {
+			width: 300px;
+		}
+		#main-content {
+			margin-left: 300px;	
+		}
+	}
+}
+
+@media (min-width: 1680px) {
+	.aside-menu_unfold {
+		.navbar-header {
+			width: 360px;
+		}
+		.aside-navbar {
+			width: 360px;
+		}
+		#main-content {
+			margin-left: 360px;	
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.aside-menu_fold {
+		.aside-navbar {
+			opacity: 0;
+			transform: translateX(-100%);
+		}
+		#main-content {
+			margin-left: 0;
+		}
+	}
+	.aside-menu_unfold {
+		.aside-navbar {
+			opacity: 1;
+			transform: translateX(0);
+		}
+		
+		.aside-navbar {
+			width: 220px;
+		}
+	}
+	.navbar {
+		background-color: $white;
+		height: 61px;
+		.navbar-header { 
+			box-shadow: none;
+			width: auto;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			.navbar-brand {
+				img {
+					max-height: 75%;
+				}
+			}
+		}
+		
+	}
+}

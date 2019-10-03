@@ -1,0 +1,35 @@
+/*
+	GREENDELTA
+	Author: HiFi Digital
+	version: 1.0
+*/
+/* BASE - Base styles, variables, mixins, etc */
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/base';
+@import 'partials/din';
+@import 'partials/utilities';
+@import 'partials/components';
+@import 'partials/pagination';
+@import 'partials/card';
+@import 'partials/table';
+@import 'partials/badge';
+@import 'partials/buttons';
+@import 'partials/layout';
+@import 'partials/nav';
+@import 'partials/aside';
+@import 'partials/breadcrumb';
+@import 'partials/section';
+@import 'partials/content';
+
+
+@import 'partials/home';
+@import 'partials/account';
+
+// AUTH login, signup
+@import 'partials/auth';
+
+// PAGES
+@import 'partials/footer';
+@import 'partials/responsive';
+

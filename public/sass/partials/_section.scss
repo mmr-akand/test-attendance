@@ -1,0 +1,20 @@
+
+
+.main-content-body {
+	padding-top: $common-space;
+}
+
+.section {
+	padding-top: $padding-section;
+	padding-bottom: $padding-section;
+}
+.block-pt, .block-py {
+	padding-top: $padding-section;
+}
+.block-pb, .block-py {
+	padding-bottom: $padding-section;
+}
+.has-col-mb {
+	padding-bottom: $padding-section - ($common-space * 2);
+}
+

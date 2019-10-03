@@ -1,0 +1,120 @@
+.card-user {
+	.user-header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+	.user-avater {
+		position: relative;
+		margin-right: 1rem;
+		/* &:before {
+			content: " ";
+			display: block;
+			padding-top: 100%;
+		}
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		} */
+
+		.dropify-wrapper {
+			width: 120px;
+			height: 120px;
+			border: 1px solid #f1f1f1;
+			padding: 0 !important;
+			.dropify-preview {
+				padding: 0;
+			}
+			
+			.dropify-filename {
+				visibility: hidden;
+				opacity: 0;
+				display: none !important;
+			}
+			.dropify-infos-message {
+				margin-top: 0 !important;
+				padding-top: 0 !important;
+				white-space: inherit !important;
+				font-size: .750rem !important;
+				line-height: 1.2 !important;
+				font-weight: normal !important;
+				&:before {
+					display: none;
+				}
+			}
+			.dropify-error {
+				font-size: .750rem !important;
+				font-weight: normal !important;
+			}
+		}
+	}
+	.user-meta {
+		padding: .5rem 0;
+	}
+	.user-name {
+		margin-bottom: .25rem;
+	}
+
+	.userinfo-table {
+		tbody {
+			td {
+				padding-top: 4px;
+				padding-bottom: 4px;
+				&:first-child {
+					padding-right: 8px;
+				}
+				&:last-child {
+					padding-left: 8px;
+				}
+			}
+		}
+	}
+
+	.userinfo-list {
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: .750rem;
+			border-radius: .25rem;
+			&:nth-child(odd) {
+				background-color: #f7f7f7;
+			}
+			span {
+				display: block;
+			}
+		}
+		.userinfo-title {
+			font-weight: 500;
+			padding-right: 12px;
+			&:after {
+				content: " : "
+			}
+		}
+	}
+}
+
+.card-account-setting {
+	.card-header {
+		background-color: #f7f7f7;
+		border-bottom: 0;
+	}
+}
+
+.navtab-userinfo {
+	.nav-link {
+		&.active {
+			background-color: $primary;
+		}
+	}
+}
